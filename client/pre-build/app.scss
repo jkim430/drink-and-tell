@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+$brown: #3d3838;
+$white: #f4f2f2;
+$green: #68bd45;
+$dark-green: #4c8a40;
+$light-grey: #d2d0d0;
+
+body {
+  background-color: $brown;
+  color: $white;
+  font-family: Open Sans;
+}
+
+a {
+  color: $white;
+  &:hover {
+    text-decoration: none;
+    color: #23b6e4;
+  }
+}
+
+.aligner {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: $green;
+  border-color: $dark-green;
+  &:hover {
+    background-color: $dark-green;
+    border-color: $dark-green;
+  }
+}
+
+.btn:focus {
+  background-color: $dark-green;
+  border-color: $dark-green;
+  color: $white;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+@import 'home/home';
+@import 'posts/posts';
+
